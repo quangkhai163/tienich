@@ -16,7 +16,7 @@ def as_json(data):
 async def is_admin(update: Update):
     if update.effective_user.id != ADMIN_ID:
         await update.message.reply_text(as_json({
-            "error": "You are not authorized to use this bot."
+            "error": "m nghĩ m đủ tuổi để sờ vào bot của t à😏."
         }), parse_mode="Markdown")
         return False
     return True
